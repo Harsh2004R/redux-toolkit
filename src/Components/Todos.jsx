@@ -20,7 +20,10 @@ function Todos() {
                     <button onClick={() => dispatch(removeTodo(el.id))} style={{ margin: "10px" }}>X</button>
                     <input type="text" onChange={(e) => setEdit(e.target.value)} />
                     <button onClick={() => {
-                        dispatch(updateTodo({ id: el.id, title: edit }));
+                        if (edit.trim() !== "") {
+                            dispatch(updateTodo({ id: el.id, title: edit }));
+                            setEdit(""); // Clear input after update
+                        }
                     }}>
                         Update
                     </button>
