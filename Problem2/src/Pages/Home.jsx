@@ -6,7 +6,7 @@ function Home() {
     return (
         <>
 
-            <Center h="80vh">
+            <Center  h="80vh">
                 <Box textAlign="center">
                     <Text fontSize="3xl" fontWeight="bold">
                         Welcome to MyStore

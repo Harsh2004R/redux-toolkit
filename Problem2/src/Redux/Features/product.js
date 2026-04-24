@@ -3,11 +3,11 @@ let initialState = {
     items: [],
     isLoading: false,
     errors: null,
-    status: undefined,
+    status: 'idle',
 
 }
 
-export const fetchProducts = createAsyncThunk('products', async () => {
+export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
     const req = await fetch('http://localhost:3001/products');
     const res = await req.json();
     return res;
@@ -27,6 +27,7 @@ const productSlice = createSlice({
         builder.addCase(fetchProducts.fulfilled, (state, action) => {
             state.items = action.payload;
             state.status = "successful"
+            state.isLoading = false;
         })
     }
 

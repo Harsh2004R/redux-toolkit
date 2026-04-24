@@ -1,28 +1,25 @@
 import React from 'react'
-import { Box, Flex, Text, Button, Image } from '@chakra-ui/react'
+import { Box, Flex, Text, Button, Image, Heading } from '@chakra-ui/react'
+import { useDispatch, useSelector } from 'react-redux'
+import { addToCart, removeToCart, clearCart } from "../Redux/Features/cart.js"
 
 
-
-const cartItems = [
-    {
-        "id": "1",
-        "title": "Wireless Headphones",
-        "description": "High-quality sound with noise cancellation.",
-        "price": 2499,
-        "rating": 4.5,
-        "quantity": 20,
-        "image": "https://picsum.photos/id/180/300/300"
-    }
-]
 function Cart() {
+    const dispatch = useDispatch();
+    const cartItems = useSelector((state) => state.cart.cart)
+    console.log(cartItems)
     return (
-        <Box p="20px">
+        <Box p="20px" >
+            <Heading mt="50px" mb="20px" textAlign={"center"}>Cart</Heading>
 
-            {cartItems.map((item) => (
-                <Box minH={"100vh"} w="100%">
+            {cartItems.length === 0
+                && <Text textAlign={"center"} fontWeight={"400"} fontSize={"10px"}>Your Cart is empty</Text>
+            }
+
+            {cartItems?.map((item) => (
+                <Box mb="20px" key={item.id} w="100%">
                     <Flex
-                        key={item.id}
-                        border="1px solid #ddd"
+                        border="1px solid #bdbdbdad"
                         borderRadius="10px"
                         p="15px"
                         mb="15px"
@@ -53,7 +50,9 @@ function Cart() {
                             <Button>+</Button>
                         </Flex>
 
-                        <Button bgColor={"#e73f3fda"} color={"#fff"}>
+                        <Button
+                            onClick={() => dispatch(removeToCart(item.id))}
+                            bgColor={"#e73f3fda"} color={"#fff"}>
                             Delete
                         </Button>
 

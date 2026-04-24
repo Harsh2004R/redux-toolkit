@@ -1,184 +1,194 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "title": "Wireless Headphones",
-            "description": "High-quality sound with noise cancellation.",
-            "price": 2499,
-            "rating": 4.5,
-            "quantity": 20,
-            "image": "https://picsum.photos/id/180/300/300"
-        },
-        {
-            "id": 2,
-            "title": "Smart Watch",
-            "description": "Track fitness, calls, and notifications.",
-            "price": 1999,
-            "rating": 4.2,
-            "quantity": 35,
-            "image": "https://picsum.photos/id/1062/300/300"
-        },
-        {
-            "id": 3,
-            "title": "Gaming Mouse",
-            "description": "Ergonomic RGB mouse for gamers.",
-            "price": 899,
-            "rating": 4.3,
-            "quantity": 50,
-            "image": "https://picsum.photos/id/1080/300/300"
-        },
-        {
-            "id": 4,
-            "title": "Mechanical Keyboard",
-            "description": "Durable keyboard with tactile switches.",
-            "price": 2999,
-            "rating": 4.6,
-            "quantity": 15,
-            "image": "https://picsum.photos/id/1060/300/300"
-        },
-        {
-            "id": 5,
-            "title": "Bluetooth Speaker",
-            "description": "Portable speaker with deep bass.",
-            "price": 1599,
-            "rating": 4.4,
-            "quantity": 25,
-            "image": "https://picsum.photos/id/29/300/300"
-        },
-        {
-            "id": 6,
-            "title": "Laptop Backpack",
-            "description": "Waterproof bag with multiple compartments.",
-            "price": 1299,
-            "rating": 4.1,
-            "quantity": 40,
-            "image": "https://picsum.photos/id/1069/300/300"
-        },
-        {
-            "id": 7,
-            "title": "Running Shoes",
-            "description": "Comfortable shoes for daily running.",
-            "price": 2199,
-            "rating": 4.3,
-            "quantity": 30,
-            "image": "https://picsum.photos/id/21/300/300"
-        },
-        {
-            "id": 8,
-            "title": "Sunglasses",
-            "description": "UV protected stylish sunglasses.",
-            "price": 799,
-            "rating": 4.0,
-            "quantity": 60,
-            "image": "https://picsum.photos/id/1005/300/300"
-        },
-        {
-            "id": 9,
-            "title": "Power Bank",
-            "description": "10000mAh fast charging power bank.",
-            "price": 999,
-            "rating": 4.2,
-            "quantity": 45,
-            "image": "https://picsum.photos/id/180/300/301"
-        },
-        {
-            "id": 10,
-            "title": "LED Desk Lamp",
-            "description": "Adjustable brightness with touch control.",
-            "price": 699,
-            "rating": 4.1,
-            "quantity": 55,
-            "image": "https://picsum.photos/id/1067/300/300"
-        },
-        {
-            "id": 11,
-            "title": "Office Chair",
-            "description": "Ergonomic chair with lumbar support.",
-            "price": 5499,
-            "rating": 4.6,
-            "quantity": 10,
-            "image": "https://picsum.photos/id/1044/300/300"
-        },
-        {
-            "id": 12,
-            "title": "Fitness Band",
-            "description": "Track steps, sleep, and heart rate.",
-            "price": 1499,
-            "rating": 4.3,
-            "quantity": 38,
-            "image": "https://picsum.photos/id/1059/300/300"
-        },
-        {
-            "id": 13,
-            "title": "Smartphone Stand",
-            "description": "Adjustable stand for desk use.",
-            "price": 299,
-            "rating": 4.0,
-            "quantity": 70,
-            "image": "https://picsum.photos/id/1084/300/300"
-        },
-        {
-            "id": 14,
-            "title": "Wireless Charger",
-            "description": "Fast charging pad for smartphones.",
-            "price": 1199,
-            "rating": 4.2,
-            "quantity": 42,
-            "image": "https://picsum.photos/id/1081/300/300"
-        },
-        {
-            "id": 15,
-            "title": "Digital Camera",
-            "description": "Capture high-quality images easily.",
-            "price": 8999,
-            "rating": 4.5,
-            "quantity": 8,
-            "image": "https://picsum.photos/id/250/300/300"
-        },
-        {
-            "id": 16,
-            "title": "Tripod Stand",
-            "description": "Stable tripod for cameras and phones.",
-            "price": 1299,
-            "rating": 4.3,
-            "quantity": 22,
-            "image": "https://picsum.photos/id/433/300/300"
-        },
-        {
-            "id": 17,
-            "title": "Coffee Maker",
-            "description": "Brew fresh coffee in minutes.",
-            "price": 3499,
-            "rating": 4.4,
-            "quantity": 18,
-            "image": "https://picsum.photos/id/1063/300/300"
-        },
-        {
-            "id": 18,
-            "title": "Electric Kettle",
-            "description": "Boil water quickly with auto shut-off.",
-            "price": 999,
-            "rating": 4.2,
-            "quantity": 33,
-            "image": "https://picsum.photos/id/292/300/300"
-        },
-        {
-            "id": 19,
-            "title": "Table Fan",
-            "description": "Compact and powerful cooling fan.",
-            "price": 1499,
-            "rating": 4.1,
-            "quantity": 27,
-            "image": "https://picsum.photos/id/1068/300/300"
-        },
-        {
-            "id": 20,
-            "title": "Wall Clock",
-            "description": "Modern design wall clock.",
-            "price": 599,
-            "rating": 4.0,
-            "quantity": 65,
-            "image": "https://picsum.photos/id/1025/300/300"
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "title": "Wireless Headphones",
+      "description": "High-quality sound with noise cancellation.",
+      "price": 2499,
+      "rating": 4.5,
+      "quantity": 20,
+      "image": "https://picsum.photos/id/180/300/300"
+    },
+    {
+      "id": "2",
+      "title": "Smart Watch",
+      "description": "Track fitness, calls, and notifications.",
+      "price": 1999,
+      "rating": 4.2,
+      "quantity": 35,
+      "image": "https://picsum.photos/id/1062/300/300"
+    },
+    {
+      "id": "3",
+      "title": "Gaming Mouse",
+      "description": "Ergonomic RGB mouse for gamers.",
+      "price": 899,
+      "rating": 4.3,
+      "quantity": 50,
+      "image": "https://picsum.photos/id/1080/300/300"
+    },
+    {
+      "id": "4",
+      "title": "Mechanical Keyboard",
+      "description": "Durable keyboard with tactile switches.",
+      "price": 2999,
+      "rating": 4.6,
+      "quantity": 15,
+      "image": "https://picsum.photos/id/1060/300/300"
+    },
+    {
+      "id": "5",
+      "title": "Bluetooth Speaker",
+      "description": "Portable speaker with deep bass.",
+      "price": 1599,
+      "rating": 4.4,
+      "quantity": 25,
+      "image": "https://picsum.photos/id/29/300/300"
+    },
+    {
+      "id": "6",
+      "title": "Laptop Backpack",
+      "description": "Waterproof bag with multiple compartments.",
+      "price": 1299,
+      "rating": 4.1,
+      "quantity": 40,
+      "image": "https://picsum.photos/id/1069/300/300"
+    },
+    {
+      "id": "7",
+      "title": "Running Shoes",
+      "description": "Comfortable shoes for daily running.",
+      "price": 2199,
+      "rating": 4.3,
+      "quantity": 30,
+      "image": "https://picsum.photos/id/21/300/300"
+    },
+    {
+      "id": "8",
+      "title": "Sunglasses",
+      "description": "UV protected stylish sunglasses.",
+      "price": 799,
+      "rating": 4,
+      "quantity": 60,
+      "image": "https://picsum.photos/id/1005/300/300"
+    },
+    {
+      "id": "9",
+      "title": "Power Bank",
+      "description": "10000mAh fast charging power bank.",
+      "price": 999,
+      "rating": 4.2,
+      "quantity": 45,
+      "image": "https://picsum.photos/id/180/300/301"
+    },
+    {
+      "id": "10",
+      "title": "LED Desk Lamp",
+      "description": "Adjustable brightness with touch control.",
+      "price": 699,
+      "rating": 4.1,
+      "quantity": 55,
+      "image": "https://picsum.photos/id/1067/300/300"
+    },
+    {
+      "id": "11",
+      "title": "Office Chair",
+      "description": "Ergonomic chair with lumbar support.",
+      "price": 5499,
+      "rating": 4.6,
+      "quantity": 10,
+      "image": "https://picsum.photos/id/1044/300/300"
+    },
+    {
+      "id": "12",
+      "title": "Fitness Band",
+      "description": "Track steps, sleep, and heart rate.",
+      "price": 1499,
+      "rating": 4.3,
+      "quantity": 38,
+      "image": "https://picsum.photos/id/1059/300/300"
+    },
+    {
+      "id": "13",
+      "title": "Smartphone Stand",
+      "description": "Adjustable stand for desk use.",
+      "price": 299,
+      "rating": 4,
+      "quantity": 70,
+      "image": "https://picsum.photos/id/1084/300/300"
+    },
+    {
+      "id": "14",
+      "title": "Wireless Charger",
+      "description": "Fast charging pad for smartphones.",
+      "price": 1199,
+      "rating": 4.2,
+      "quantity": 42,
+      "image": "https://picsum.photos/id/1081/300/300"
+    },
+    {
+      "id": "15",
+      "title": "Digital Camera",
+      "description": "Capture high-quality images easily.",
+      "price": 8999,
+      "rating": 4.5,
+      "quantity": 8,
+      "image": "https://picsum.photos/id/250/300/300"
+    },
+    {
+      "id": "16",
+      "title": "Tripod Stand",
+      "description": "Stable tripod for cameras and phones.",
+      "price": 1299,
+      "rating": 4.3,
+      "quantity": 22,
+      "image": "https://picsum.photos/id/433/300/300"
+    },
+    {
+      "id": "17",
+      "title": "Coffee Maker",
+      "description": "Brew fresh coffee in minutes.",
+      "price": 3499,
+      "rating": 4.4,
+      "quantity": 18,
+      "image": "https://picsum.photos/id/1063/300/300"
+    },
+    {
+      "id": "18",
+      "title": "Electric Kettle",
+      "description": "Boil water quickly with auto shut-off.",
+      "price": 999,
+      "rating": 4.2,
+      "quantity": 33,
+      "image": "https://picsum.photos/id/292/300/300"
+    },
+    {
+      "id": "19",
+      "title": "Table Fan",
+      "description": "Compact and powerful cooling fan.",
+      "price": 1499,
+      "rating": 4.1,
+      "quantity": 27,
+      "image": "https://picsum.photos/id/1068/300/300"
+    },
+    {
+      "id": "20",
+      "title": "Wall Clock",
+      "description": "Modern design wall clock.",
+      "price": 599,
+      "rating": 4,
+      "quantity": 65,
+      "image": "https://picsum.photos/id/1025/300/300"
+    },
+    {
+      "id": "O8CF4DgIgxQ",
+      "title": "",
+      "description": "",
+      "price": 0,
+      "rating": 4,
+      "quantity": 5,
+      "image": ""
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
