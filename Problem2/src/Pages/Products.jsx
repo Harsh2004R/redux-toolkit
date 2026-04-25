@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Box, Flex, Text, Image, Button, Heading } from '@chakra-ui/react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchProducts } from "../Redux/Features/product.js"
-import { addToCart } from "../Redux/Features/cart.js"
+import { addToCart, removeToCart } from "../Redux/Features/cart.js"
 function Products() {
 
   const cart = useSelector((state) => state.cart.cart);
@@ -51,11 +51,25 @@ function Products() {
               ⭐ {item.rating}
             </Text>
 
-            <Button
-              onClick={() => dispatch(addToCart(item))}
-              mt="10px" w="100%">
-              Add to Cart
-            </Button>
+            {cart.find((el) => el.id === item.id)
+              ?
+              <Button
+                onClick={() => dispatch(removeToCart(item.id))}
+                mt="10px" w="100%"
+                bgColor={"#ef5d5de7"}
+                color="#fff"
+              >
+                Remove from Cart
+              </Button>
+              :
+              <Button
+                onClick={() => dispatch(addToCart(item))}
+                mt="10px" w="100%">
+                Added to cart
+              </Button>
+
+            }
+
           </Box>
         ))}
 

@@ -3,17 +3,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 
 let initialState = {
-    cart: [
-        {
-            "id": "1",
-            "title": "Wireless Headphones",
-            "description": "High-quality sound with noise cancellation.",
-            "price": 2499,
-            "rating": 4.5,
-            "quantity": 20,
-            "image": "https://picsum.photos/id/180/300/300"
-        }
-    ]
+    cart: JSON.parse(localStorage.getItem('cart')) || []
 }
 const cartSlice = createSlice({
 
@@ -22,12 +12,15 @@ const cartSlice = createSlice({
     reducers: {
         addToCart: function (state, action) {
             state.cart.push(action.payload);
+            localStorage.setItem('cart', JSON.stringify(state.cart))
         },
         removeToCart: function (state, action) {
             state.cart = state.cart.filter((el) => el.id !== action.payload)
+            localStorage.setItem('cart', JSON.stringify(state.cart))
         },
         clearCart: function (state) {
             state.cart = [];
+            localStorage.clear()
         }
     }
 
