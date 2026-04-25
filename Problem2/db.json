@@ -179,15 +179,6 @@
       "rating": 4,
       "quantity": 65,
       "image": "https://picsum.photos/id/1025/300/300"
-    },
-    {
-      "id": "O8CF4DgIgxQ",
-      "title": "",
-      "description": "",
-      "price": 0,
-      "rating": 4,
-      "quantity": 5,
-      "image": ""
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Box, Flex, Input, Text, Button } from '@chakra-ui/react'
+import { Box, Flex, Input, Text, Button, Center } from '@chakra-ui/react'
 import { nanoid } from "@reduxjs/toolkit"
 import { useDispatch, useSelector } from 'react-redux'
 import { makePostRequest } from "../Redux/Features/addProduct.js"
@@ -7,17 +7,17 @@ import { makePostRequest } from "../Redux/Features/addProduct.js"
 
 
 function AddProduct() {
-    const newproductSelector = useSelector((state) => state.newProduct.newProduct)
-    console.log(newproductSelector);
+    const { newProduct, loading, error } = useSelector((state) => state.newProduct)
+    console.log(newProduct, loading, error);
     const dispatchEvent = useDispatch();
     const id = nanoid()
     const [input, setInputData] = useState({
         id,
         title: "",
         description: "",
-        price: 0,
-        rating: 4,
-        quantity: 5,
+        price: 500,
+        rating: 3.5,
+        quantity: 4,
         image: ""
     })
     const handleChange = (e) => {
@@ -34,9 +34,32 @@ function AddProduct() {
         dispatchEvent(makePostRequest(input))
         // console.log(input);
 
+        setInputData({
+            id: nanoid(),
+            title: "",
+            description: "",
+            price: 500,
+            rating: 3.5,
+            quantity: 4,
+            image: ""
+        });
+    }
 
+    if (loading === true) {
+        return <Center w="100%" minH="100vh">
+            <Text textAlign={"center"}>Loading ...</Text>
+        </Center>
+    }
+
+    if (error) {
+        return <Center w="100%" minH="100vh">
+            <Text textAlign={"center"}>{error}</Text>
+        </Center>
     }
     return (
+
+
+
         <Box p="10" w="100%" minH={"100vh"}>
             <Box pr="10" pl="10" w="100%" h="auto">
                 <Text mt="80px" mb="20px" textAlign={"center"} fontSize={"14px"} color="#dbdbdbd8">
